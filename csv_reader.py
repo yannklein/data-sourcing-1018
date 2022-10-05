@@ -10,6 +10,9 @@ import csv
 # CSV WITH HEADER
 with open('data/biostats.csv') as csv_file:
     reader = csv.DictReader(csv_file, skipinitialspace=True)
-    # print(list(reader))
+    print(list(reader))
+    print(list(reader))
     for row in reader:
+        print(row)
+        print('hi')
         print(f'name: {row["Name"]} - age: {row["Age"]}')
