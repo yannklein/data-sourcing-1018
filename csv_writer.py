@@ -5,3 +5,8 @@ beatles = [
     { 'first_name': 'Ringo', 'last_name': 'Starr', 'instrument': 'drums'}
 ]
 
+with open('data/beatles.csv', 'w') as csv_file:
+    writer =  csv.DictWriter(csv_file, beatles[0].keys())
+    writer.writeheader()
+    for beatle in beatles:
+        writer.writerow(beatle)

@@ -1,1 +1,8 @@
+https://openlibrary.org/api/books?bibkeys=ISBN:0451526538&callback=mycallback
 
+SCHEME :// DOMAIN.org /path/to/data ? key=value & key=value (query string)
+
+https://openlibrary.org/  -> one per api
+/api/books  -> endpoint, many per api 
+
+bibkeys=ISBN:0451526538&callback=mycallback -> many options per endpoint
